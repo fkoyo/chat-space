@@ -23,8 +23,6 @@ Things you may want to cover:
 
 * ...
 
-<!--　以下にchatspaceのDB設計を記載-->
-
 ## usersテーブル
 
 |Column|Type|Options|
