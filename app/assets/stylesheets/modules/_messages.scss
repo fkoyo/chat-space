@@ -86,6 +86,8 @@
 
 // 右サイド適用file:_main_chat
 
+  // 右サイドヘッダー
+
 .mainwrapper {
   width: calc(100vw - 300px);
 
@@ -141,9 +143,32 @@
     }
   }
 
+  // 右サイドメッセージ箇所
+
   .maincontents {
     height: calc(100vh - 190px);
     background-color: #fafafa;
+    
+    .message {
+      padding: 35px 0 11px 40px;
+      &__title {
+        display: flex;
+        &--name {
+          color: #333333;
+          font-size: 16px;
+          padding: 0 10px 12px 0;
+          font-weight: bold;
+        }
+        &--date {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+      &__text {
+        color: #434a54;
+        font-size: 14px;
+      }
+    }
   }
 
   .mainbottom  {
