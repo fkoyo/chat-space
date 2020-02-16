@@ -10,6 +10,8 @@
 
 // 右サイド適用file:_side_bar
 
+  // 右サイドheader
+
 .sidewrapper {
   width: 300px;
 
@@ -53,9 +55,33 @@
   }
 }
 
+// 右サイドkcontents
+
 .sidecontents {
   height: calc(100vh - 100px);
   background-color: #2f3e51;
+
+  .grouplists {
+    width: 100%;
+
+    &__list {
+      margin: 0 auto;
+
+      &--groupname {
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 20px 20px 0 20px;
+      }
+
+      &--latestmessage {
+        font-size: 11px;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 5px 20px 20px 20px;
+      }
+    }
+  }
 }
 
 // 右サイド適用file:_main_chat
