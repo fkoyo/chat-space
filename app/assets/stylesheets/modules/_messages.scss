@@ -1,3 +1,84 @@
 * {
   box-sizing: border-box;
 }
+
+// 全体適用file:index
+
+.wrapper {
+  display: flex;
+}
+
+// 右サイド適用file:_side_bar
+
+.sidewrapper {
+  width: 300px;
+
+  .sideheader {
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .menubox {
+      width: 260px;
+      height: 20px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      &__username {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 20px;
+      }
+
+      &__icons {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+       
+        &--creategroup {
+          padding-right: 5px;
+          color: #ffffff;
+        }
+        
+        &--setting {
+          color: #ffffff;
+        }  
+      }
+    }
+  }
+}
+
+.sidecontents {
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+}
+
+// 右サイド適用file:_main_chat
+
+.mainwrapper {
+  width: calc(100vw - 300px);
+}
+
+.mainheader {
+  height: 100px;
+  background-color: #ffffff;
+  border-bottom: solid #eeeeee;
+}
+
+.maincontents {
+  height: calc(100vh - 190px);
+  background-color: #fafafa;
+}
+
+.mainbottom  {
+  height: 90px;
+  background-color: #d2d2d2;
+}
+
+
+

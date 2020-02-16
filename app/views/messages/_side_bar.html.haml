@@ -1,1 +1,10 @@
-＜サイドバー＞
+.sidewrapper
+  .sideheader
+    .menubox
+      .menubox__username koyo 
+      .menubox__icons
+        = link_to "#", class:"menubox__icons" do
+          = icon('far', 'edit', class:"menubox__icons--creategroup")
+        = link_to "#", class:"menubox__icons" do
+          = icon('fas', 'cog', class:"menubox__icons--setting")
+  .sidecontents
