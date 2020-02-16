@@ -8,9 +8,9 @@
   display: flex;
 }
 
-// 右サイド適用file:_side_bar
+// 左サイド適用file:_side_bar
 
-  // 右サイドheader
+  // 左サイドheader
 
 .sidewrapper {
   width: 300px;
@@ -55,7 +55,7 @@
   }
 }
 
-// 右サイドkcontents
+// 左サイドkcontents
 
 .sidecontents {
   height: calc(100vh - 100px);
@@ -88,23 +88,67 @@
 
 .mainwrapper {
   width: calc(100vw - 300px);
+
+  .mainheader {
+    height: 100px;
+    width: calc(100vw - 300px);
+    background-color: #ffffff;
+    border-bottom: solid #eeeeee;
+
+    .groupinfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__show {
+        padding: 0 40px;
+
+        &--groupname {
+          color: #333333;
+          font-size: 20px;
+          padding: 35px 0 15px 0;
+
+        }
+
+        &--groupmember {
+          color: #999999;
+          font-size: 12px;
+          display: flex;
+          list-style: none;
+          
+          &__name {
+          }
+        }
+        
+      }
+
+      &__groupedit {
+        width: 72px;
+        text-align: center;
+        margin:28px 40px ;
+        align-items: center;
+        p {
+          color: #38aef0;
+          font-size: 16px;
+          padding: 0 20px;
+          height: 40px;
+          line-height: 40px;
+          border: 1px solid #38aef0;
+        }
+      }
+
+
+    }
+  }
+
+  .maincontents {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+  }
+
+  .mainbottom  {
+    height: 90px;
+    background-color: #d2d2d2;
+  }
+
 }
-
-.mainheader {
-  height: 100px;
-  background-color: #ffffff;
-  border-bottom: solid #eeeeee;
-}
-
-.maincontents {
-  height: calc(100vh - 190px);
-  background-color: #fafafa;
-}
-
-.mainbottom  {
-  height: 90px;
-  background-color: #d2d2d2;
-}
-
-
-
