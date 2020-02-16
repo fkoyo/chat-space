@@ -29,3 +29,26 @@
       .message__text
         こんにちは
   .mainbottom
+    %form.messagebox
+      .messageform
+        %input.messageform__text{:name => "text", :placeholder => "type a message", :type => "text"}/
+        %label{class: "messageform__file"}
+          = icon('fa', 'image', class:"messageform__file--icon")
+          %input.messageform__file--image{:type => "file"}/
+      %input.messagesubmit{:name => "commit", :type => "sbumit", :value => "Send"}/
+
+
+-# %input.login-input-text
+-# {:name => "email", :placeholder => "メールアドレス", :type => "email", :value => ""}/
+
+  <form class="new-message">
+    <div class="input-box">
+      <input class="input-text" placeholder="type a message" type="text">
+    </div>
+    <input class="submit-btn" type="submit" name="commit" value="Send">
+  </form>
+  <input type="file" name="example1">
+
+  -# %label{class: "input-box__image"}
+    -# = icon('fas', 'image')
+    -# %input{type: "file"}
