@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+// 全体適用file:index
+
+.wrapper {
+  display: flex;
+}
+
+// 左サイド適用file:_side_bar
+
+  // 左サイドheader
+
+.sidewrapper {
+  width: 300px;
+
+  .sideheader {
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .menubox {
+      width: 260px;
+      height: 20px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      &__username {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 20px;
+      }
+
+      &__icons {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+       
+        &--creategroup {
+          padding-right: 5px;
+          color: #ffffff;
+        }
+        
+        &--setting {
+          color: #ffffff;
+        }  
+      }
+    }
+  }
+}
+
+// 左サイドkcontents
+
+.sidecontents {
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+
+  .grouplists {
+    width: 100%;
+
+    &__list {
+      margin: 0 auto;
+
+      &--groupname {
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 20px 20px 0 20px;
+      }
+
+      &--latestmessage {
+        font-size: 11px;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 5px 20px 20px 20px;
+      }
+    }
+  }
+}
+
+// 右サイド適用file:_main_chat
+
+  // 右サイドヘッダー
+
+.mainwrapper {
+  width: calc(100vw - 300px);
+
+  .mainheader {
+    height: 100px;
+    width: calc(100vw - 300px);
+    background-color: #ffffff;
+    border-bottom: solid #eeeeee;
+
+    .groupinfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__show {
+        padding: 0 40px;
+
+        &--groupname {
+          color: #333333;
+          font-size: 20px;
+          padding: 35px 0 15px 0;
+
+        }
+
+        &--groupmember {
+          color: #999999;
+          font-size: 12px;
+          display: flex;
+          list-style: none;
+          
+          &__name {
+          }
+        }
+        
+      }
+
+      &__groupedit {
+        width: 72px;
+        text-align: center;
+        margin:28px 40px ;
+        align-items: center;
+        p {
+          color: #38aef0;
+          font-size: 16px;
+          padding: 0 20px;
+          height: 40px;
+          line-height: 40px;
+          border: 1px solid #38aef0;
+        }
+      }
+
+
+    }
+  }
+
+  // 右サイドメッセージ箇所
+
+  .maincontents {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+    
+    .message {
+      padding: 35px 0 11px 40px;
+      &__title {
+        display: flex;
+        &--name {
+          color: #333333;
+          font-size: 16px;
+          padding: 0 10px 12px 0;
+          font-weight: bold;
+        }
+        &--date {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+      &__text {
+        color: #434a54;
+        font-size: 14px;
+      }
+    }
+  }
+
+  // 右サイドフォーム部分
+
+  .mainbottom  {
+    height: 90px;
+    background-color: #d2d2d2;
+    .messagebox {
+      // background-color: blue;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .messageform {
+        // background-color: gray;
+        width: 100%;
+        margin: 0 15px 0 40px;
+        position: relative;
+        &__text {
+          padding-left: 10px;
+          width: 100%;
+          height: 50px;
+          border-style: none;
+        }
+        &__file {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          &--icon {
+          }
+          &--image {
+            display: none;
+          }
+        }
+      }
+      .messagesubmit {
+        background-color: #38aef0;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        margin-right: 40px;
+        border-style: none;
+        color: #ffffff;
+      }
+    }
+  }
+
+}

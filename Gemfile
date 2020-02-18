@@ -54,3 +54,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # install_haml
 gem 'haml-rails'
+
+# font-awesome_install
+gem 'font-awesome-sass'
