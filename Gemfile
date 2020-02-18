@@ -57,3 +57,6 @@ gem 'haml-rails'
 
 # font-awesome_install
 gem 'font-awesome-sass'
+
+# deviceの追加
+gem 'devise'
