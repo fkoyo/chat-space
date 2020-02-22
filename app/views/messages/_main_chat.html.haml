@@ -29,10 +29,20 @@
       .message__text
         こんにちは
   .mainbottom
-    %form.messagebox
-      .messageform
-        %input.messageform__text{:name => "text", :placeholder => "type a message", :type => "text"}/
-        %label{class: "messageform__file"}
-          = icon('fa', 'image', class:"messageform__file--icon")
-          %input.messageform__file--image{:type => "file"}/
-      %input.messagesubmit{:name => "commit", :type => "sbumit", :value => "Send"}/
+    = form_for [@group, @message] do |f|
+      .messagebox
+        .messageform
+          =
+           f.text_field :content, class: 'messageform__text', placeholder: "type a message"
+          = f.label :image, class: "messageform__file" do
+            = icon('fa', 'image', class:"messageform__file--icon")
+            = f.file_field :image, class: 'messageform__file--image'
+        = f.submit "Send", class: 'messagesubmit'
+    
+    -# %form.messagebox
+    -#   .messageform
+    -#     %input.messageform__text{:name => "text", :placeholder => "type a message", :type => "text"}/
+    -#     %label{class: "messageform__file"}
+    -#       = icon('fa', 'image', class:"messageform__file--icon")
+    -#       %input.messageform__file--image{:type => "file"}/
+    -#   %input.messagesubmit{:name => "commit", :type => "sbumit", :value => "Send"}/
