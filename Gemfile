@@ -63,3 +63,7 @@ gem 'devise'
 
 # pryのインストール
 gem 'pry-rails'
+
+# carrierwaveのインストール
+gem 'carrierwave', '~> 2.0'
+gem 'mini_magick'

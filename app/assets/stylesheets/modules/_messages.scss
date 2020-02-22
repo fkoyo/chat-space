@@ -66,6 +66,9 @@
 
     &__list {
       margin: 0 auto;
+      .edit_link {
+        text-decoration: none;
+      }
 
       &--groupname {
         font-size: 15px;
@@ -129,6 +132,10 @@
         text-align: center;
         margin:28px 40px ;
         align-items: center;
+        border-style: none;
+        &--link {
+          text-decoration: none;
+        }
         p {
           color: #38aef0;
           font-size: 16px;
@@ -164,9 +171,15 @@
           font-size: 12px;
         }
       }
-      &__text {
-        color: #434a54;
-        font-size: 14px;
+      &__lower {
+        &--text {
+          color: #434a54;
+          font-size: 14px;
+        }
+        .message__image {
+          width: 150px;
+          height: 100px;
+        }
       }
     }
   }
@@ -176,6 +189,7 @@
   .mainbottom  {
     height: 90px;
     background-color: #d2d2d2;
+    align-items: center;
     .messagebox {
       // background-color: blue;
       width: 100%;
