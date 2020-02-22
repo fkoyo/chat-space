@@ -132,6 +132,10 @@
         text-align: center;
         margin:28px 40px ;
         align-items: center;
+        border-style: none;
+        &--link {
+          text-decoration: none;
+        }
         p {
           color: #38aef0;
           font-size: 16px;
