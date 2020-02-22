@@ -60,3 +60,6 @@ gem 'font-awesome-sass'
 
 # deviceの追加
 gem 'devise'
+
+# pryのインストール
+gem 'pry-rails'
