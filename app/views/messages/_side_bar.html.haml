@@ -15,4 +15,5 @@
           = link_to group_messages_path(group), class: "edit_link" do
             %p.grouplists__list--groupname
               = group.name
-        %p.grouplists__list--latestmessage  こんにちは
+        %p.grouplists__list--latestmessage
+          = group.show_last_message

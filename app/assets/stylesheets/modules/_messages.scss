@@ -167,9 +167,15 @@
           font-size: 12px;
         }
       }
-      &__text {
-        color: #434a54;
-        font-size: 14px;
+      &__lower {
+        &--text {
+          color: #434a54;
+          font-size: 14px;
+        }
+        .message__image {
+          width: 150px;
+          height: 100px;
+        }
       }
     }
   }

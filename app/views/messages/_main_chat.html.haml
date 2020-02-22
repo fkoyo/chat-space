@@ -2,13 +2,13 @@
   .mainheader
     .groupinfo
       .groupinfo__show
-        .groupinfo__show--groupname チーム1 
+        .groupinfo__show--groupname 
+          = @group.name
         %ul.groupinfo__show--groupmember 
-          Member：
-          %li.groupinfo__show--groupmember__name
-            koyo
-          %li.groupinfo__show--groupmember__name
-            fujise
+          Member:
+          - @users.each do |user|
+            %li.groupinfo__show--groupmember__name
+              = user.name
       .groupinfo__groupedit 
         %p Edit
   .maincontents
