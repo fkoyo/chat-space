@@ -14,6 +14,7 @@
 
 .sidewrapper {
   width: 300px;
+  height: 100vh;
 
   .sideheader {
     height: 100px;
@@ -58,7 +59,7 @@
 // 左サイドkcontents
 
 .sidecontents {
-  height: calc(100vh - 100px);
+  height: 100%;
   background-color: #2f3e51;
 
   .grouplists {
@@ -153,8 +154,9 @@
   // 右サイドメッセージ箇所
 
   .maincontents {
-    height: calc(100vh - 190px);
+    // height: calc(100vh - 190px);
     background-color: #fafafa;
+    height: calc(100% - 190px);
     
     .message {
       padding: 35px 0 11px 40px;
