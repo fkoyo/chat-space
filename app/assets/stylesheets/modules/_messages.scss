@@ -14,7 +14,7 @@
 
 .sidewrapper {
   width: 300px;
-  height: 100vh;
+  // height: 100vh;
 
   .sideheader {
     height: 100px;
@@ -59,7 +59,7 @@
 // 左サイドkcontents
 
 .sidecontents {
-  height: 100%;
+  height: calc(100% - 100px);
   background-color: #2f3e51;
 
   .grouplists {
@@ -156,7 +156,7 @@
   .maincontents {
     // height: calc(100vh - 190px);
     background-color: #fafafa;
-    height: calc(100% - 190px);
+    // height: calc(100% - 190px);
     
     .message {
       padding: 35px 0 11px 40px;
@@ -192,12 +192,17 @@
     height: 90px;
     background-color: #d2d2d2;
     align-items: center;
+    align-items: center; 
+    display: flex;
+    .new_message {
+      width: 100%;
+    }
     .messagebox {
       // background-color: blue;
       width: 100%;
       height: 100%;
       display: flex;
-      align-items: center;
+      // align-items: center;
       .messageform {
         // background-color: gray;
         width: 100%;
