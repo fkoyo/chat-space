@@ -6,6 +6,7 @@
 
 .wrapper {
   display: flex;
+  height: 100vh;
 }
 
 // 左サイド適用file:_side_bar
@@ -59,7 +60,7 @@
 // 左サイドkcontents
 
 .sidecontents {
-  height: calc(100% - 100px);
+  height: calc(100vh - 100px);
   background-color: #2f3e51;
 
   .grouplists {
@@ -154,7 +155,7 @@
   // 右サイドメッセージ箇所
 
   .maincontents {
-    // height: calc(100vh - 190px);
+    height: calc(100vh - 190px);
     background-color: #fafafa;
     // height: calc(100% - 190px);
     
