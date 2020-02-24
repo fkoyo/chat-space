@@ -6,7 +6,7 @@ $(function(){
       var html = `<div class="message">
                     <div class="message__title">
                       <div class="message__title--name">
-                      ${message.user.name}
+                      ${message.user_name}
                       </div>
                       <div class="message__title--date">
                       ${message.created_at}
@@ -23,7 +23,7 @@ $(function(){
       var html = `<div class="message">
                     <div class="message__title">
                       <div class="message__title--name">
-                      ${message.user.name}
+                      ${message.user_name}
                       </div>
                       <div class="message__title--date">
                       ${message.created_at}
@@ -54,9 +54,9 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $(".maincontents").append(html);
-      $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+      $('.maincontents').animate({ scrollTop: $('.maincontents')[0].scrollHeight});
       $('form')[0].reset();
-      // $('.messagesubmit').prop('disabled', false);
+      $('.messagesubmit').prop('disabled', false);
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
