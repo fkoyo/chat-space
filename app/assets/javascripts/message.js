@@ -1,4 +1,6 @@
 $(function(){
+  var last_message_id = $('.message:last').data("message-id");
+  console.log(last_message_id);
 
   function buildHTML(message){
     // 「もしメッセージに画像が含まれていたら」という条件式
