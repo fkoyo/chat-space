@@ -18,3 +18,4 @@
 
 # カリキュラムにより追記画像自体はソースコードには関係ないのでコミットされないようにする
 public/uploads/*
+config/secrets.yml
